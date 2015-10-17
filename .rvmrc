@@ -1,0 +1,2 @@
+rvm use ruby-2.2.2@fybertest --create
+gem install bundler

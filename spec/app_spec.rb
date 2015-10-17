@@ -1,5 +1,3 @@
-require 'app'
-
 RSpec.describe App, '#foo' do
    context 'ctx' do
      it 'bar' do

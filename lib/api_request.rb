@@ -1,4 +1,5 @@
 require 'digest/sha1'
+require 'uri'
 
 class ApiRequest
   include APIConfig
@@ -12,7 +13,7 @@ class ApiRequest
   end
 
   def to_url
-    options = @config.merge(:timestamp => timestamp).sort.map { |k, v| "#{k}=#{v}" }.join('&')
+    options = @config.merge(:timestamp => timestamp).sort.map { |k, v| "#{k}=#{CGI.escape(v.to_s)}" }.join('&')
     hash = generate_hash(options)
     "#{api_uri}?#{options}&hashkey=#{hash}".to_s
   end

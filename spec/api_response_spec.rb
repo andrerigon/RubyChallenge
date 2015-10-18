@@ -5,7 +5,7 @@ RSpec.describe 'ApiResponse' do
 
       context 'signed response' do
         it 'verifies correct response' do
-          ApiResponse.new(mock_http)
+          expect { ApiResponse.new(mock_http) }.to_not raise_error 
         end
 
         it 'throw exception for invalid response' do

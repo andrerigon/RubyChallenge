@@ -1,4 +1,4 @@
-RSpec.describe App, '#foo' do
+RSpec.describe App do
 
 
   let(:resp) {

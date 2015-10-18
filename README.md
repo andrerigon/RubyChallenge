@@ -1,6 +1,10 @@
+# RubyChallenge
+
+[View live on Heroku](https://ruby-challenge.herokuapp.com/)
+
 Simple App to access Fyber's API and render some offers information.
 
-Assumptions:
+## Assumptions:
 
 1) Sinatra was chosen due to its simplicity, since no latency, throughput or load requisites were given.
 2) Config is hardwired into a module. If the app demands more complexity and configuration options to access the API, it could be moved to a file.
@@ -8,15 +12,15 @@ Assumptions:
 4) Some HTML5 features (ex: number field) may not be supported in old browsers
 5) RVM is used to manage ruby versions and gem sets.
 
-Install  gems:
+## Install  gems:
 
 make setup
 
-Running the app:
+## Running the app:
 
 make run
 
-Running tests:
+## Running tests:
 
 rake
 

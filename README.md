@@ -1,4 +1,4 @@
-# RubyChallenge
+# RubyChallenge [![Build Status](https://travis-ci.org/andrerigon/RubyChallenge.svg?branch=master)](https://travis-ci.org/andrerigon/RubyChallenge)
 
 [View live on Heroku](https://ruby-challenge.herokuapp.com/)
 

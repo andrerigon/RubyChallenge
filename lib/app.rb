@@ -14,6 +14,7 @@ class App < Sinatra::Base
   post '/' do
     req = ApiRequest.new(params['uid'], params['pub0'], params['page'])
     resp = settings.api.offers(req)
+
     if resp.has_results?
       erb :offers, :locals => {:offers => resp.offers}
     else

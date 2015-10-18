@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Available Offers
+        <small>Fyber API</small>
+      </h1>
+    </div>
+  </div>
+
+  <% offers.each do |offer| %>
+      <div class="row vertical-align">
+        <div class="col-md-1" >
+            <img class="thumbnail" src="<%= offer.thumbnail_lowres %>" style="margin-top: 10px" alt="">
+        </div>
+        <div class="col-xs-6" style="margin: -5px;">
+          <h3><%= offer.title %></h3>
+          <h4>$ <%= offer.payout %></h4>
+        </div>
+      </div>
+
+  <% end %>
+  <hr>
+
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>

@@ -2,6 +2,8 @@ require 'simplecov'
 require 'rack/test'
 
 require File.expand_path '../../lib/app.rb', __FILE__
+require File.expand_path '../../lib/api_request.rb', __FILE__
+require File.expand_path '../../lib/api_response.rb', __FILE__
 
 
 SimpleCov.start

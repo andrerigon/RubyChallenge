@@ -1,5 +1,4 @@
 require 'digest/sha1'
-require 'api_config'
 
 class ApiRequest
   include APIConfig

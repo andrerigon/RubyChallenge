@@ -1,5 +1,4 @@
 require 'digest/sha1'
-require 'api_config'
 
 class Offer
   attr_reader :id, :title, :thumbnail_lowres, :payout
@@ -34,7 +33,7 @@ class ApiResponse
 
   def valid?(http_response)
     hash = Digest::SHA1.hexdigest(http_response.body + api_key)
-    hash == http_response.headers[:'X-Sponsorpay-Response-Signature']
+    hash == http_response.headers[:'x_sponsorpay_response_signature']
   end
 
 

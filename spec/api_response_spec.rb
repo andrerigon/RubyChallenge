@@ -67,7 +67,7 @@ RSpec.describe 'ApiResponse' do
         http_response = double('http response' + Time.now.getutc.to_s)
         allow(http_response).to receive(:body) { body }
         allow(http_response).to receive(:headers) do
-          {:'X-Sponsorpay-Response-Signature' => hash }
+          {:'x_sponsorpay_response_signature' => hash }
         end
         http_response
       end

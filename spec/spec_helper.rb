@@ -1,7 +1,10 @@
 require 'simplecov'
 require 'rack/test'
 
+require File.expand_path '../../lib/fyber_api.rb', __FILE__
 require File.expand_path '../../lib/app.rb', __FILE__
+require File.expand_path '../../lib/api_config.rb', __FILE__
+
 require File.expand_path '../../lib/api_request.rb', __FILE__
 require File.expand_path '../../lib/api_response.rb', __FILE__
 
@@ -10,6 +13,7 @@ SimpleCov.start
 
 module RSpecMixin
   include Rack::Test::Methods
+
   def app() App end
 end
 

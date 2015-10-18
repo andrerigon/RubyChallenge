@@ -4,13 +4,7 @@ class App < Sinatra::Base
 
   configure do
     set :api, :: FyberApi.new
-  end
-
-
-  set :views, settings.root + '/../views'
-
-  get '/fyber' do
-    'hi!'
+    set :views, settings.root + '/../views'
   end
 
   get '/' do

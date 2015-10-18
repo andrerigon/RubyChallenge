@@ -18,7 +18,7 @@ class App < Sinatra::Base
     begin
       render_offers(settings.api.offers(req))
     rescue => ex
-      logger.error('Error when fetching offers: ' + ex)
+      logger.error('Error when fetching offers: ' + ex.to_s)
       'No offers available'
     end
 

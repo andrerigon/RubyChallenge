@@ -1,0 +1,9 @@
+language: ruby
+rvm: 2.2.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: I7Q2J+TZRB8Xz/3X/Q0yDz8pITSK4L7RKGjb1jO2axafYek8FbRm1IJmQPsL8lJoYB9sT9ovvhuP/7ZRlPfDC1gOOc+uDJ2x2BRcSQCssxRHet4Ck+YEgIAmjZv/y2kV47WoUbOzlZAbc7qRBNVy52bw/Jqyj2odbb3NqvoHL4E1X4rdLZJBp1h12cWSueOB/czPNFaLxOsY+BfsSvc/A46GJb1WzIhO7GfMmC+K0vOoNRlj7cR1sTD1okz2XQXQwHy6fPJ4QJnnKYwe3jewGpRuTgPEnNHQ1DKsrKQ8gD3QFqcRBVMOz/MZfcIaC0j4NnDvAaQf1QwTdStz6UGoRMLpcvmiqFrumBPF/S4NYRmYQUzRmHPaAAlFbldJBPQL90AS4SQt1XZyLRmjzEVj0C9V0ETJhyzkz73DC4L/4fEvJ+tbErQgwy3AkGpb6mKymdJpT8W616HzhSWplk8qrz+piaQqGsMYMdw1c46uEzVu6R3WJA4DWT/tRPh5Xj8RzJG6UDaDY+9DpaxN7rTM6CSpCdc8ShK8IZQxHD1xg+jUHZFfwWLx5QzCqrcc0yY6021gBoHOUnuqwRPUBjA0V4DRRuwZA0s51ncBNTDxjVyWZhDaToeKYWj3pkvq+m2YQEKPg0BVfaOQ/KwptXQhoYfuAT7PFe0ZnDuKq1p2Zrw=
+  app: ruby-challenge
+  on:
+    repo: andrerigon/RubyChallenge
